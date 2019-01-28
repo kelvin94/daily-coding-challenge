@@ -1,0 +1,23 @@
+public class MyClass {
+    public static void main(String args[]) {
+        int x=10;
+        int y=25;
+        int z=x+y;
+        int[] arr = {1,2,3,4,5};
+        int product = 1;
+        for(int num : arr) {
+            product *= num;
+        }
+        System.out.println(product);
+        for(int i = 0; i< arr.length; i++) {
+            arr[i] = product / arr[i];
+        }
+        
+        for(int num : arr) {
+             System.out.println(num);
+            
+        }
+
+       
+    }
+}
